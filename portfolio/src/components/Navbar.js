@@ -1,10 +1,22 @@
 import React from "react";
-import logo from "../mylogo.png";
+import { useEffect, useState } from "react";
+import logo from "../monlogo.png";
 import "../styles/navbar.css";
 
 const Navbar = () => {
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {};
+  }, []);
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${show && "nav-black"}`}>
       <img className="logo" src={logo} alt="LOGO" />
       <ul className="liste">
         <li>
