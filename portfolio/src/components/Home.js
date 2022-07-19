@@ -1,4 +1,5 @@
 import React from "react";
+import Emoji from "./Emoji";
 import "../styles/home.css";
 import hum from "../photo.png";
 
@@ -8,9 +9,7 @@ const Home = () => {
       <div className="description">
         <h1>
           Hallo, it's Zineddine
-          <span role="img" aria-label="hi" className="emoji">
-            👋
-          </span>
+          <Emoji symbol="👋" label="hand" />
         </h1>
       </div>
       <div className="pic">
