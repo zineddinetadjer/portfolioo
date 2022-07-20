@@ -1,6 +1,0 @@
-.emoji {
-  transition: transform 250ms ease-in-out;
-}
-.emoji:hover {
-  transform: rotate(45deg);
-}

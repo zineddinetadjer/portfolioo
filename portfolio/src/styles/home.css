@@ -5,6 +5,50 @@
 }
 .home {
   margin-top: 5em;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.description {
+  grid-area: 1 / 1 / 6 / 4;
+  font-family: "Lato", sans-serif;
+  padding: 0 3em;
+  padding-top: 7em;
+}
+.description h1 {
+  font-size: 3em;
+  font-weight: 900;
+}
+.description p {
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+.pic {
+  position: relative;
+  grid-area: 1 / 4 / 6 / 7;
+}
+.pic img {
+  width: 41em;
+  transition: all 250ms;
+}
+.pic img:hover {
+  transform: scale(10px);
+}
+.light {
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  z-index: -1;
+  width: 20em;
+  height: 20em;
+  background-color: rgba(204, 204, 204, 0.678);
+  border-radius: 50%;
+  filter: blur(10px);
+}
+.emoji img {
+  width: 1em;
+  height: 1em;
+  margin-left: 0.3em;
 }
