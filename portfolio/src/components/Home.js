@@ -25,6 +25,11 @@ const Home = () => {
         <div className="light"></div>
         <img src={hum} alt="picture" />
       </div>
+      <div className="social-medias">
+        <a>
+          <i class="fa-brands fa-facebook fa-3x"></i>
+        </a>
+      </div>
     </div>
   );
 };

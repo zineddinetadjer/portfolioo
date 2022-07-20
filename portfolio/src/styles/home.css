@@ -24,6 +24,7 @@
 .description p {
   margin-top: 1em;
   font-size: 1.3em;
+  color: #818080;
 }
 .pic {
   position: relative;
@@ -34,7 +35,7 @@
   transition: all 250ms;
 }
 .pic img:hover {
-  transform: scale(10px);
+  transform: scale(1px);
 }
 .light {
   position: absolute;
