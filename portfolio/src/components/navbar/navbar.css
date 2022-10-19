@@ -32,13 +32,9 @@
   display: flex;
   gap: 2rem;
   margin-right: 4rem;
-  list-style: none;
-}
-.n-list > ul > li {
-  font-weight: 600;
 }
 
-.n-list > ul > li:hover {
+.n-list > ul :hover {
   color: var(--orange);
   cursor: pointer;
 }

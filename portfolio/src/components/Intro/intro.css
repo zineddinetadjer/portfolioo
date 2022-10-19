@@ -34,7 +34,10 @@
   margin-top: 10px;
 }
 .i-button {
-  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
   height: 2rem;
 }
 .i-icons {
