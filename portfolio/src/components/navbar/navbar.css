@@ -13,9 +13,8 @@
   gap: 2rem;
 }
 
-.n-name {
-  font-size: 1.3rem;
-  font-weight: bold;
+.n-name img {
+  width: 15em;
 }
 .n-right {
   flex: 1;

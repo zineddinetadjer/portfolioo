@@ -81,6 +81,10 @@
   border-radius: 50%;
   padding: 0;
 }
+.photo {
+  margin-top: 4em;
+  width: 15em;
+}
 
 /* blur */
 .blur {

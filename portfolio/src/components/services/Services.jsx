@@ -26,9 +26,9 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
         <span>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+          I will help you build a powerfull responsive website for your
           <br />
-          ispum is simpley dummy text of printing
+          company, E-commerce ...
         </span>
         <a href="#">
           <button className="button s-button">Download CV</button>
@@ -46,7 +46,7 @@ const Services = () => {
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            detail={"Figma, Photoshop, Illustrator, Adobe xd"}
           />
         </motion.div>
         {/* second card */}
@@ -70,7 +70,9 @@ const Services = () => {
           <Card
             emoji={Humble}
             heading={"UI/UX"}
-            detail={"Lorem ispum dummy text are usually use in "}
+            detail={
+              "Good web designing skills used to build a powerfull website"
+            }
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import boy from "../../img/profile-pic.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -38,16 +38,22 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/zineddinetadjer">
+            <img src={Github} alt="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/tadjer-abderraouef-zineddine-5b376623b/">
+            <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+          <a href="https://www.instagram.com/dzcoder__/">
+            <img src={Instagram} alt="Instagram" />
+          </a>
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={boy} alt="" className="photo" />
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -74,7 +80,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="MERN Stack" text2="Developer" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

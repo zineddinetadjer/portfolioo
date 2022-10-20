@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import Toggle from "../toggle/Toggle";
 import "./navbar.css";
 import { Link } from "react-scroll";
-const navbar = () => {
+import logo from "../../img/monlogo.png";
+import logo2 from "../../img/monlogo2.png";
+import { themeContext } from "../../Context";
+
+const Navbar = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
       <div className="n-left">
-        <div className="n-name">Andrew</div>
+        <div className="n-name">
+          {darkMode ? <img src={logo} /> : <img src={logo2} />}
+        </div>
         <Toggle />
       </div>
       {/* right */}
@@ -21,12 +30,12 @@ const navbar = () => {
             </li>
             <li>
               <Link to="services" spy={true} smooth={true}>
-                Serivces
+                Services
               </Link>
             </li>
             <li>
               <Link to="portfolio" spy={true} smooth={true}>
-                Protfolio
+                Portfolio
               </Link>
             </li>
           </ul>
@@ -39,4 +48,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

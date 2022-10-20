@@ -17,6 +17,7 @@
   overflow: hidden;
   color: var(--black);
   font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
 }
 
 .button {

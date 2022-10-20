@@ -6,6 +6,7 @@ import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
+import netflix from "../../img/netflix.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -24,16 +25,9 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Ecommerce} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MusicApp} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={HOC} alt="" />
+          <a href="https://zwinflix.web.app/">
+            <img src={netflix} alt="" />
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>
